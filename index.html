@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="generator">
+            <h1>Password Generator</h1>
+            <label class="password-wrap">
+                <input type="text" id="password" readonly placeholder="Generate a Password" />
+                <button><span class="material-symbols-outlined" id="copy">content_copy</span></button>
+            </label>
+    
+            <label>
+                <span>Password Length:</span>
+                <input type="number" id="length" value="16" />
+            </label>
+    
+
+            <label>
+                <span> Include UpperCase:</span>
+                <input type="checkbox" id="uppercase" checked />
+            </label>
+            
+            <label>
+                <span> Include LowerCase:</span>
+                <input type="checkbox" id="lowercase" checked />
+            </label>
+            
+            <label>
+                <span> Include Special Characters:</span>
+                <input type="checkbox" id="characters" checked />
+            </label>
+            
+            <label>
+                <span> Include Numbers:</span>
+                <input type="checkbox" id="numbers" checked />
+            </label>
+            
+            <button  type="submit" id="generate">Generate Password</button>
+
+        </div>
+        
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
